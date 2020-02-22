@@ -5,25 +5,24 @@
 }
 
 body {
-    background-color: #e8eaf6;
+    background-color: white;
     font-family: sans-serif;
 }
 
 .container {
-    position: absolute;
-    left: 50%;
-    top: 30%;
-    transform: translate(-50%,-50%);
+    margin: 50px;
     background-color: #fff;
-    box-shadow: 0 6px 8px rgba(0,0,0,.1);
+    box-shadow: 10px 10px 10px rgba(0,0,0,.4);
     width: 50%;
-    padding: 20px;
+    padding: 40px;
+    border: 1px solid grey;
+    border-top: 10px solid blueviolet;
+    border-radius: 25px;
 }
 
 .container ul {
     text-decoration: none;
     list-style-type: none;
-    padding-bottom: 5px;
 }
 
 .container h1 {
@@ -36,6 +35,8 @@ body {
     padding: 10px 8px;
     font-size: 1.2rem;
     margin-bottom: 40px;
+    border-radius: 5px;
+    border: 1px solid grey;
 }
 
 .container ul li {
@@ -45,4 +46,21 @@ body {
 .container ul li a {
     font-size: 18px;
     text-decoration: none;
+}
+
+button {
+    padding: 10px;
+    margin: 0px 5px 30px 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    text-transform: uppercase;
+    background: white;
+    cursor: pointer;
+    font-size: .8em;
+}
+
+button:hover {
+    background-color: blueviolet;
+    color: white;
+    /* transition: ease-in-out, 2000; */
 }
