@@ -4,9 +4,9 @@ const filterInput = document.getElementById("filterInput");
 
 // target buttons
 
-const foodBtn = document
-  .getElementById("food")
-  .addEventListener("click", foodList);
+// const foodBtn = document
+//   .getElementById("food")
+//   .addEventListener("click", foodList);
 
 // event listener
 
@@ -37,10 +37,10 @@ function filterNames() {
 }
 
 // display only food items
-function foodList() {
+// function foodList() {
 //   console.log("yolo");
-  let item = document.getElementsByClassName("food");
+//   let item = document.getElementsByClassName("food");
   //if found display items
-  item.style.color = "pink";
+  
   //else hide items
-}
+// }
