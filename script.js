@@ -2,12 +2,6 @@
 
 const filterInput = document.getElementById("filterInput");
 
-// target buttons
-
-// const foodBtn = document
-//   .getElementById("food")
-//   .addEventListener("click", foodList);
-
 // event listener
 
 filterInput.addEventListener("keyup", filterNames);
@@ -35,12 +29,3 @@ function filterNames() {
     }
   }
 }
-
-// display only food items
-// function foodList() {
-//   console.log("yolo");
-//   let item = document.getElementsByClassName("food");
-  //if found display items
-  
-  //else hide items
-// }
