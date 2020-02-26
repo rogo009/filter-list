@@ -6,6 +6,11 @@ const filterInput = document.getElementById("filterInput");
 
 filterInput.addEventListener("keyup", filterNames);
 
+// button
+const button = document
+  .getElementById("dessert")
+  .addEventListener("click", check);
+
 // function
 
 function filterNames() {
@@ -27,5 +32,16 @@ function filterNames() {
     } else {
       li[i].style.display = "none";
     }
+  }
+}
+
+function check() {
+  const ul = document.getElementById("names");
+
+  // target li items from the ul variable
+  let li = ul.querySelectorAll("li.collection-item");
+
+  if (li.classList === "dessert") {
+    li.style.display = "none";
   }
 }
