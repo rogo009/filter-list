@@ -37,8 +37,12 @@ function hide() {
   const ul = document.getElementById("names");
   let li = ul.querySelectorAll("li.collection-item");
 
- ul.classList.add('hide');
-
+  // toggle to add remove and add classList to entire UL element
+  if(ul.classList.contains('hide')) {
+    ul.classList.remove('hide');
+  } else {
+    ul.classList.add('hide');
+  }
   //for some reason it will not work on li.classList.add(); it keeps saying it's undefined
   //need to work with arrays
 }
