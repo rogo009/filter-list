@@ -7,9 +7,8 @@ const filterInput = document.getElementById("filterInput");
 filterInput.addEventListener("keyup", filterNames);
 
 // button
-const button = document
-  .getElementById("dessert")
-  .addEventListener("click", check);
+
+const button = document.getElementById("hide").addEventListener("click", hide);
 
 // function
 
@@ -35,16 +34,18 @@ function filterNames() {
   }
 }
 
-// function check() {
-//   const ul = document.getElementById("names");
+function hide() {
+  const ul = document.getElementById("names");
+  let li = ul.querySelectorAll("li.collection-item");
 
-//   // target li items from the ul variable
-//   let li = ul.querySelectorAll("li.collection-item");
-
+  console.log('yolo');
 //   if (li.classList === "dessert") {
 //     li.style.display = "none";
 //   }
-// }
+}
 
-//if click button all it displays all items
-//if click cakes display only cake items with class cake else hide all other items
+//if click button all displays all items
+
+//if click food, add display class to food items OR add hide class to all other items
+
+//loop through array, but how to id what will add the class to the item?
