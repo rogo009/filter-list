@@ -35,13 +35,16 @@ function filterNames() {
   }
 }
 
-function check() {
-  const ul = document.getElementById("names");
+// function check() {
+//   const ul = document.getElementById("names");
 
-  // target li items from the ul variable
-  let li = ul.querySelectorAll("li.collection-item");
+//   // target li items from the ul variable
+//   let li = ul.querySelectorAll("li.collection-item");
 
-  if (li.classList === "dessert") {
-    li.style.display = "none";
-  }
-}
+//   if (li.classList === "dessert") {
+//     li.style.display = "none";
+//   }
+// }
+
+//if click button all it displays all items
+//if click cakes display only cake items with class cake else hide all other items
