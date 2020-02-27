@@ -43,10 +43,8 @@ function hide() {
   } else {
     ul.classList.add('hide');
   }
-  //for some reason it will not work on li.classList.add(); it keeps saying it's undefined
+  //above method will not work on li.classList.add(); it will state undefined
 }
-
-//if click button all displays all items
 
 //if click food, add display class to food items OR add hide class to all other items
 
