@@ -7,7 +7,6 @@ const filterInput = document.getElementById("filterInput");
 filterInput.addEventListener("keyup", filterNames);
 
 // button
-
 const button = document.getElementById("hide").addEventListener("click", hide);
 
 // function
@@ -38,10 +37,10 @@ function hide() {
   const ul = document.getElementById("names");
   let li = ul.querySelectorAll("li.collection-item");
 
-  console.log('yolo');
-//   if (li.classList === "dessert") {
-//     li.style.display = "none";
-//   }
+ ul.classList.add('hide');
+
+  //for some reason it will not work on li.classList.add(); it keeps saying it's undefined
+  //need to work with arrays
 }
 
 //if click button all displays all items
