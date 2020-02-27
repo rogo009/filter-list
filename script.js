@@ -2,6 +2,9 @@
 
 const filterInput = document.getElementById("filterInput");
 
+// target ul
+const ul = document.getElementById("names");
+
 // event listener
 
 filterInput.addEventListener("keyup", filterNames);
@@ -18,7 +21,6 @@ function filterNames() {
     .value.toUpperCase();
 
   // target ul and id 'names'
-  const ul = document.getElementById("names");
 
   // target li items from the ul variable
   let li = ul.querySelectorAll("li.collection-item");
@@ -34,8 +36,6 @@ function filterNames() {
 }
 
 function hide() {
-  const ul = document.getElementById("names");
-  let li = ul.querySelectorAll("li.collection-item");
 
   // toggle to add remove and add classList to entire UL element
   if(ul.classList.contains('hide')) {
@@ -44,7 +44,6 @@ function hide() {
     ul.classList.add('hide');
   }
   //for some reason it will not work on li.classList.add(); it keeps saying it's undefined
-  //need to work with arrays
 }
 
 //if click button all displays all items
